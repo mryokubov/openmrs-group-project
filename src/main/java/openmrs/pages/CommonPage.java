@@ -1,4 +1,4 @@
-package pages;
+package openmrs.pages;
 
 /**
  * Created by tairovich_jr on 2022-01-22.
