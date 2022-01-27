@@ -64,7 +64,7 @@ public class PatientRegistrationTests {
         homePage.findPatient();
         patientPage.searchPatientBox();
         patientPage.logOut();
-        ScanQ.scanTest();
+//        ScanQ.scanTest();
         softAssert.assertAll();
     }
 }
