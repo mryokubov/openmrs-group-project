@@ -96,18 +96,10 @@ public class RegistrationPage {
     private WebElement checkMark;
 
 
-//    @FindBy(xpath = "//span[@class='icon-ok icon-white']")
-//    private WebElement nameCheck;
-//    @FindBy(xpath = "//span[@class='icon-ok icon-white']")
-//    private WebElement genderCheck;
-//    @FindBy(xpath = "//span[@class='icon-ok icon-white']")
-//    private WebElement birthDayCheck;
-//    @FindBy(xpath = "//div/p[4]")
-//    private WebElement addressCheck;
-//    @FindBy(xpath = "//div/p[4]")
-//    private WebElement phoneNumberCheck;
-//    @FindBy(xpath = "//div/p[4]")
-//    private WebElement relativesCheck;   Specific Items Check
+    @FindBy(xpath = "//span[@class='title']")
+    private List<WebElement> patientTabs;
+
+    String[] patientTabsArray = {"Name:","Gender:","Birthdate:","Address:","Phone Number:","Relatives:"};
 
 
 
@@ -170,5 +162,11 @@ public class RegistrationPage {
         confirmButton.click();
     }
 
+    public void patientTabsVerify(){
+        for(int index =0;index<patientTabs.size();index++){
+            softAssert.assertEquals(patientTabs.get(index).getText().trim(),patientTabsArray[index],
+                    "patient elements did not match");
 
+        }
+    }
 }
