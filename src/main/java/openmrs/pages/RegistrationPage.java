@@ -134,6 +134,7 @@ public class RegistrationPage {
 
 
 
+
     }
 
     public void genderSelect() {

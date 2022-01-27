@@ -22,10 +22,10 @@ public class PatientRegistrationTests {
         softAssert = new SoftAssert();
     }
 
-    @AfterMethod
-    public void driverQuit(){
-        BrowserDriver.quitBrowser();
-    }
+//    @AfterMethod
+//    public void driverQuit(){
+//        BrowserDriver.quitBrowser();
+//    }
 
     @Test
     public void test() throws Exception{
@@ -60,7 +60,7 @@ public class PatientRegistrationTests {
         patientPage.goHome();
         homePage.findPatient();
         patientPage.searchPatientBox();
-        patientPage.logOut();
+//        patientPage.logOut();
         softAssert.assertAll();
 
     }
