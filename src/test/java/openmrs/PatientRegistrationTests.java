@@ -25,6 +25,7 @@ public class PatientRegistrationTests {
     @AfterMethod
     public void driverQuit(){
         BrowserDriver.quitBrowser();
+        System.out.println("The Test has ENDED!!!");
     }
 
     @Test

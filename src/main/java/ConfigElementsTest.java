@@ -1,4 +1,3 @@
-import com.github.javafaker.Faker;
 import utils.ConfigReader;
 
 import java.io.IOException;

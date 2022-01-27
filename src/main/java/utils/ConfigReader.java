@@ -16,7 +16,8 @@ public class ConfigReader {
 // important thing to note is that all the classes in the project are being considered at runtime
     //if you have an error in one class... any other classes runtime will be effected during complie time.
     static { // static block- executed once and only once and is executed before anything else even the constructor
-        System.out.println("hey there"); // to check the static block method
+        System.out.println("Static Block has been called"); // to check the static block method
+        System.out.println("The Test Has Began");
         try {
             FileInputStream inputStream = new FileInputStream(propertyFilePath);
             properties=new Properties();

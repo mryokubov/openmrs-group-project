@@ -51,7 +51,7 @@ public class PatientPage {
             "HEALTH TREND SUMMARY","WEIGHT GRAPH","APPOINTMENTS","RECENT VISITS","FAMILY","CONDITIONS",
             "ATTACHMENTS","ALLERGIES"};
 
-    //METHODS/////////////////////////////////////////////////////////////////////////////////////////////
+    //METHODS//////////////////////////////////////////////////////////////////////////////////////////////
 
     public void registrationPageTabsCheck() {
         for (int index = 0; index < registrationElements.size(); index++) {

@@ -7,14 +7,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.safari.SafariOptions;
-import org.testng.asserts.SoftAssert;
 import java.time.Duration;
-import java.util.Locale;
-import java.util.Map;
-import java.util.concurrent.ExecutionException;
+
 
 public class BrowserDriver {
 
