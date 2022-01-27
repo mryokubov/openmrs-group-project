@@ -58,8 +58,8 @@ public class PatientPage {
             softAssert.assertEquals(registrationElements.get(index).getText().trim(),
                     registrationElementsArray[index]);
         }
-
     }
+
     public void goHome () {
         homeBtn.click();
     }
@@ -84,10 +84,9 @@ public class PatientPage {
         Thread.sleep(3000);
         String verifyText = verificationText.getText();
         softAssert.assertEquals(verifyText,first+" "+middle+" "+family,"name didn't match");
-
     }
+
     public void logOut(){
         logOutBtn.click();
     }
-
 }

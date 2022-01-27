@@ -74,8 +74,6 @@ public class RegistrationPage {
             "HEALTH TREND SUMMARY","WEIGHT GRAPH","APPOINTMENTS","RECENT VISITS","FAMILY","CONDITIONS",
             "ATTACHMENTS","ALLERGIES"};
 
-//    @FindBy(xpath = "//a[@href='/openmrs/index.htm']")
-//    private WebElement homeBtn;
 
     @FindBy(xpath = "//a[contains(@id,'coreapps-activeVisit')][1]")
     private WebElement findPatientTab;
@@ -101,9 +99,6 @@ public class RegistrationPage {
 
     String[] patientTabsArray = {"Name:","Gender:","Birthdate:","Address:","Phone Number:","Relatives:"};
 
-
-
-
     //METHODS/////////////////////////////////////////////////////////////////////////////////////////////
 
     public void nextBottonClick(){
@@ -122,11 +117,6 @@ public class RegistrationPage {
         ConfigReader.setProperties("middleName",middle);
         Thread.sleep(1500);
         ConfigReader.setProperties("familyName",family);
-
-
-
-
-
     }
 
     public void genderSelect() {
@@ -166,7 +156,6 @@ public class RegistrationPage {
         for(int index =0;index<patientTabs.size();index++){
             softAssert.assertEquals(patientTabs.get(index).getText().trim(),patientTabsArray[index],
                     "patient elements did not match");
-
         }
     }
 }

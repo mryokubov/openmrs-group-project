@@ -10,9 +10,8 @@ public class ConfigReader {
     private static Properties properties;
     private static final String propertyFilePath="src/main/resources/config.properties";
 
-    private ConfigReader(){
+    private ConfigReader(){}
 
-    }
 // important thing to note is that all the classes in the project are being considered at runtime
     //if you have an error in one class... any other classes runtime will be effected during complie time.
     static { // static block- executed once and only once and is executed before anything else even the constructor
@@ -30,10 +29,8 @@ public class ConfigReader {
 
     public static String getProperty(String keyName){
         return properties.getProperty(keyName);
-
     }
     public static void setProperties(String key,String value)throws IOException {
-
         properties.store(new FileOutputStream("src/main/resources/config.properties"),null);
         properties.setProperty(key,value);
     }

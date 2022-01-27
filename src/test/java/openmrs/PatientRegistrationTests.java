@@ -64,6 +64,5 @@ public class PatientRegistrationTests {
         patientPage.searchPatientBox();
         patientPage.logOut();
         softAssert.assertAll();
-
     }
 }

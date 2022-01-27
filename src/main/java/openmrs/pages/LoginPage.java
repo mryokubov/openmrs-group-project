@@ -47,6 +47,5 @@ public class LoginPage {
         softAssert.assertEquals(errorMessage.getText().trim(),"You must choose a location!","Location error message is wrong");
         location.click();
         loginBtn.click();
-
     }
 }
