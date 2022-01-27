@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import utils.BrowserDriver;
+import utils.ScanQ;
 
 public class PatientRegistrationTests {
 
@@ -63,6 +64,7 @@ public class PatientRegistrationTests {
         homePage.findPatient();
         patientPage.searchPatientBox();
         patientPage.logOut();
+        ScanQ.scanTest();
         softAssert.assertAll();
     }
 }
